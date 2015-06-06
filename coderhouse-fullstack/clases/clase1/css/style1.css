@@ -1,0 +1,204 @@
+body{
+	width: 1366px;
+	height: 900px;	
+}
+
+header{
+	width: 1366px;
+	height: 200px;
+	margin: auto;
+}
+
+.barra-arriba{
+	width: 1366px;
+	height: 35px;
+	background-color: #CCCCCC;
+}
+
+.contact ul{
+	margin-left: 100px;
+
+}
+
+.contact ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+	margin-right: 20px;
+	margin-top: 8px;
+	font-family: Arial, Helvetica, Sans-serif;	
+}
+
+.social-cabecera ul{
+	margin-right: 100px;
+}
+
+.social-cabecera ul li{
+	font-size: 20px;
+	list-style: none;
+	display: inline;
+	float: right;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+
+.barra-abajo{
+	width: 1366px;
+	height: 120px;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+
+.logotipo{
+	margin-left: 100px;
+	margin-top: 30px;
+
+}
+
+.logo{
+	font-size: 50px;
+	font-family: Arial;
+	font-weight: 200px;
+
+}
+
+.navigation ul{
+	margin-right: 100px;
+	
+}
+
+.navigation ul li{
+	list-style: none;
+	float: right;
+	display: inline;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.map{
+	width: 1366px;
+	height: 380px;
+	background-color: #000000;
+}
+
+.center{
+	width: 1366px;
+	height: 520px;
+	background-color: #FFFFFF;	 
+}
+
+.center{
+	position: relative;
+}
+
+.contact-us{
+	position: absolute;
+	top: 39px;	
+	left: 450px;
+}
+
+.info-secundaria{
+	position: absolute;
+	top: 40px;
+	left: 100px;
+}
+
+.redes li{
+	float: left;
+	display: inline;
+	margin-right: 10px;
+	font-size: 25px;
+	border: 1px black solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 7px;
+	margin-top: 20px;
+}
+
+.center h1{
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.contact-info{
+	margin-top: 100px;
+}
+
+.contact-info li{
+	margin-top: 30px;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 17px;
+}
+
+.contact-us p{
+	margin-top: 25px;
+}
+
+form label{
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+form input{
+	width: 80%;
+	height: 25px;
+	border-radius: 5px;
+}
+
+form textarea{
+	width: 80%;
+	height: 100px;
+	border-radius: 5px;
+}
+
+#button{
+	width: 150px;
+	height: 40px;
+	display: block;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-weight: bold;
+	background-color: #FE2EF7;
+	color: #FFFFFF;
+	padding: 10px;
+
+}
+
+
+
+footer{
+	width: 100%;
+	height: 400px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+footer{
+	position: relative;
+
+}
+
+.aboutus-foot{
+	position: absolute;
+	top:30px;
+	left: 100px;
+	width: 150px;
+}
+
+.latest-news{
+	position: absolute;
+	top: 30px;
+	left: 455px;
+}
+
+.contactredes-foot{
+	position: absolute;
+	top: 30px;
+	right: 170px;
+}
+
