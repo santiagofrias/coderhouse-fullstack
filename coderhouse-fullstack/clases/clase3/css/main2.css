@@ -1,0 +1,29 @@
+body{
+	position: relative;
+	border: 2px solid #06b2a5;
+}
+
+.navigation{
+	position: absolute;
+	width: 200px;
+	border: 2px solid #06b2a5;
+}
+
+section{
+	border: 2px solid #06b2a5;
+	margin-left: 204px;
+	
+	
+}
+/*
+.seccion2{
+	border: 2px solid #06b2a5;
+	margin-left: 204px;
+	
+}
+
+.seccion3{
+	border: 2px solid #06b2a5;
+	margin-left: 204px;
+	
+}*/

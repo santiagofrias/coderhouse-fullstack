@@ -1,0 +1,41 @@
+body{
+	height: 100%;
+	position: relative;
+	border: 2px solid #06b2a5;
+}
+
+.navigation{
+	
+	width: 200px;
+	border: 2px solid #06b2a5;
+}
+
+section{
+	border: 2px solid #06b2a5;
+	margin-left: 204px;
+	
+	
+}
+/*
+.seccion2{
+	border: 2px solid #06b2a5;
+	margin-left: 204px;
+	
+}
+
+.seccion3{
+	border: 2px solid #06b2a5;
+	margin-left: 204px;
+	
+}*/
+
+.flexbox{
+	-webkit-align-items:center;
+	align-items:center;
+	position: absolute;
+	display: -webkit-flex; 
+	display: flex;
+	height: 100%;
+	top: 0;
+	left: 0;
+}

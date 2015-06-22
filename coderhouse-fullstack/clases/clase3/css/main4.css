@@ -1,0 +1,31 @@
+body{
+	height: 100%;
+	position: relative;
+	border: 2px solid #06b2a5;
+}
+
+@media screen and (min-width: 600px){
+	.navigation{
+		float: left;
+		width: 25%;
+		
+	}
+	section{
+		margin-left: 25%;
+	}
+}
+
+@media screen and (max-width: 599px){
+	nav li{
+		display: inline;
+	}
+}
+
+
+.navigation{
+	border: 2px solid #06b2a5;
+}
+
+section{
+	border: 2px solid #06b2a5;
+}
