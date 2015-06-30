@@ -1,3 +1,26 @@
+
+Clase 4
+Introducción a Lenguajes de Programación
+Lenguajes de programación divididos en:
+•  Bajo nivel
+    1.  Assembler
+    2.  C
+    3.  ALGOL
+•  Alto nivel
+    1.  Python
+    2.  Java
+    3.  C#
+    4.  Javascript
+
+Tipado
+•  Estático: explica el tipo de cada variable
+•  Dinámico: No necesita explicitar el tipo de cada variable
+
+Javascript: características
+•  Tipado dinámico
+•  Herencia prototipada
+•  Funciones de orden superior
+
 #Hoy vamos a ver Javascript#
 ------------------------------------------------------------
 La primera parte es como meter Javascript en HTML:
@@ -6,20 +29,20 @@ La primera parte es como meter Javascript en HTML:
 
 Nombrar los documentos como index.js es la forma default de nombrar los archivos en Node.js. Node.js va a buscar los archivos llamados index.js
 
-Las etiquetas script son ejecutadas en le orden en el que fueron cargadas en el HTML, esten relacionadas a codigo ingresado en el HTML o sea que el codigo esta en otro archivo .js
+Las etiquetas script son ejecutadas en el orden en el que fueron cargadas en el HTML, esten relacionadas a codigo ingresado en el HTML o sea que el codigo esta en otro archivo .js
 
-Por lo general las etiquetas script se ponen dentro del body, abajo de todo. Esto lo que hace es dejar que se cargue el HTML y CSS y luego apliar el Javascript.
-En cambio el CSS se suele poner arriba para que cargue primero el estilo y luego el HTML ya se cargue con estilo, y no solo y luego incorpore el estilo.
+Por lo general las etiquetas script se ponen dentro del body, abajo de todo. Esto lo que hace es dejar que se cargue el HTML y CSS y luego aplicar el Javascript.
+En cambio el CSS se suele poner arriba para que cargue primero el estilo y luego el HTML ya se cargue con estilo. 
 
-Si bien el ";" es opcional al terminar un statement en javascript es recomendable usarlo, porque sino Javascript va a usar su criterio. En general puede que no tenga consecuencias, pero en caso ambiguos puede que el criterio de Javascript no coincida con el criterio que uno quiso usar
+Si bien el ";" es opcional al terminar un statement en javascript es recomendable usarlo, porque sino Javascript va a usar su criterio. En general puede que no tenga consecuencias, pero en casos ambiguos puede que el criterio de Javascript no coincida con el criterio que uno quiso usar.
 
-Siempre que quiera usar una cadena de texto, una secuencia de caracteres, utilizo el tipo de dato string. Para poder explicitarle a Javascript que algo es un string encierro el string entre comillas (e.g. Hola mundo --> "Hola Mundo")
-Boolean es un tipo de dato que tiene dos valores posibles, true o false.
-Otro tipo de dato es number, a diferencia de otros lenguajes todos los numeros son number (es como que todos son interpretados como dobules)
-Null es un tipo de dato el cual tiene un unico tipo de dato que tiene como unico valor null. Null representa la ausencia de un objeto
+Siempre que quiera usar una cadena de texto, una secuencia de caracteres, utilizo el tipo de dato string. Para poder explicitarle a Javascript que algo es un string encierro el string entre comillas. Puede estar contenido entre comillas simples '' o comillas dobles "" (ej. Hola mundo --> "Hola Mundo").
+Boolean es un tipo de dato que tiene dos valores posibles, true o false. Se utiliza generalmente para tomar decisiones.
+Otro tipo de dato es number, a diferencia de otros lenguajes, todos los numeros son number (enteros y decimales).
+Null es un tipo de dato, el cual tiene un unico tipo de dato, que tiene como unico valor null. Null representa la ausencia de un objeto.
 La ventaja de null y undefined es que en ambos casos tienen un solo valor posible.
 
-Entonces los 5 datos primitivos de Java son:
+Entonces los 5 datos primitivos de Javascript son:
 - string
 - number
 - boolean
@@ -34,32 +57,39 @@ El operador typeof te devuelve el tipo de dato que ingresaste. Ejemplo:
 - typeof 'la palabra "hola" se usa para saludar'
 - "string"
 
-Una variable lo que nos permite es acceder a la posicion de la memoria a traves de un nombre. Las posiciones de memoria, variables, no hace falta definirlas al momento de generarlas en Javascript. (TIP: mantenerse siempre con el mismo tipo de variable. Y tambien que el nombre de la variable tenga sentido con lo que la variable es)
+Statement es un bloque de código que se ejecuta y puede o no devolver un valor.
+Una función es lógica representada en un statement.
+Las funciones reciben parámetros (información).
+Entre () va la información o parámetros que le paso a la función.
+Puedo pasar más de un parámetro separado por ;.
+Statement (no devuelve valor) vs Expression (devuelve algún valor).
+
+Una variable lo que nos permite es acceder a una posicion de la memoria a traves de un nombre, que tiene datos adentro. El nombre de la variable debe tener sentido con lo que la variable es.
 Como se decalara una variable?:
 - var (nombre de la variable) = (valor)
 Tambien puedo declarar mas de una variable simultaneamente. Ej.:
 - var nombreUsuario, myVar
 - var nombreUsuario = "pepe", myVar
 
-Algunas restricciones que tiene la definicion de variables es que no puede empezar con numeros, si o si una letra, ni puede tener guiones
-Hay una convencion para el nombre de las variables, se puede usar:
+Algunas restricciones que tiene la definicion de variables es que no puede empezar con numeros, si o si una letra.
+Hay una convencion para el nombre de las variables:
 - siempre empiezan con minuscula
 - si hay dos palabras las separo de una de dos formas:
     + chamelcase (ej.: var nombreUsuario, var posicionJugador, etc)
     + usar guion bajo para separar palabras "_" (ej.: var nombre_usuario)
 
-Un bug de Javascript es que si uno hace "typeof null" te devuelve "object". Lo cual no es real, porque null es vacio, no es un objeto porque justamente no hay nada
+Un bug de Javascript es que si uno hace "typeof null" te devuelve "object". Lo cual no es real, porque null es vacio, no es un objeto porque justamente no hay nada.
 
-Cada tipo de dato en si mismo es una expresion que devuelve lo que es. Por ejemplo la expression "Hola Mundo" es un string que devuelve un string. Un string devuelve su mismo resultado
+Cada tipo de dato en si mismo es una expresion que devuelve lo que es. Por ejemplo la expression "Hola Mundo" es un string que devuelve un string. Un string devuelve su mismo resultado.
 
 Cuando usamos alert como es un statement que no tiene output, no devuelve nada, por eso la consola dice undefined.
-Alert es un comando que es del browser, no de Javascript
+Alert es un comando que es del browser, no de Javascript.
 
-Todas las variables se incializan por default como Undefined. Por ende no tiene sentido inicializar algo como undefined
+Todas las variables se incializan por default como Undefined. Por ende no tiene sentido inicializar algo como undefined.
 
 Para comentar uso //
 
-La coma (,) permite poner muchas expresiones seguidas y si lo ingreso me da el valor de la ultima expresion. Interpreta las dos pero solamente devuelve la ultima
+La coma (,) permite poner muchas expresiones seguidas y si lo ingreso me da el valor de la ultima expresion. Interpreta las dos pero solamente devuelve la ultima.
 
 Para indicar que es lo que quiero evaluar primero utilizo parentesis. Ej.:
 - typeof myVar, 3 --> 3 
@@ -68,9 +98,9 @@ Para indicar que es lo que quiero evaluar primero utilizo parentesis. Ej.:
 
 - typeof (myVar,3) --> "number"
 
-**Los strings son inmutables**, yo puedo redefinir una variable pero si una variable es un string y yo quiero modificar solo parte del string no voy a poder porque cada string es inmutable. Solamente podre cambiar el string de una variable redefiniendo la misma
+**Los strings son inmutables**, yo puedo redefinir una variable pero si una variable es un string y yo quiero modificar solo parte del string no voy a poder porque cada string es inmutable. Solamente podre cambiar el string de una variable redefiniendo la misma.
 
-Utilizando los corchetes yo accedo a una seccion del dato que tengo. Por ejemplo en un string accedo al caracter en la posicion del numero que esta dentro del corchete y **siempre se incia en 0**
+Utilizando los corchetes yo accedo a una seccion del dato que tengo. Por ejemplo en un string accedo al caracter en la posicion del numero que esta dentro del corchete y **siempre se incia en 0**.
 
 Ej.:
 - var myStr = "abc"
@@ -108,7 +138,7 @@ El - y el + esperan que lo de la derecha sea un number, por lo que te da un nume
 Todo lo que esta a la derecha del operador negacion tiene que ser un boolean. Si no lo es lo castea a uno aplicandole la funcion Boolean().
 Por lo que otra forma de aplicarle Boolean() a una variable/dato/expresion es utilizar la negacion dos veces. Ej.: !!1 --> false // !!0 --> true
 ###And &&###
-No devuelve true o false, devuelve el valor de la expresion donde corto. Por ejemplo si el primero es false devuelve el primer valor, en cambio en otro caso devuelve el segundo o el enesimo en el que haya cortado
+No devuelve true o false, devuelve el valor de la expresion donde corto. Por ejemplo si el primero es false devuelve el primer valor, en cambio en otro caso devuelve el segundo o el enesimo en el que haya cortado.
 
 Ej.:
 - 0 && 1 --> 0
@@ -124,8 +154,8 @@ Ej.:
 - 0 || 2 --> 2
 - 0 || false --> false
 
-###mayor > // menor < // mayorigual <= // menorigual >==###
-Devuelve un boolean si se cumple la funcion
+###mayor > // menor < // mayorigual >= // menorigual <=###
+Devuelve un boolean si se cumple la funcion.
 
 ### Igual no estricto ==###
 Convierte los valores y verifica si son iguales
@@ -163,7 +193,7 @@ Para sumar o restar uno puedo usar el signo dos veces. ej.:
 ------------------------------------------------------------------------------
 
 Todos los inputs que se ingresan son siempre tomados como string. Ej.:
-- prompt (" cual es tu numero favorito) ---> input = 10
+- prompt ("cual es tu numero favorito") ---> input = 10
 - Output = "10"
 
 -----------------------------------------------------------------------------
@@ -171,17 +201,17 @@ Todos los inputs que se ingresan son siempre tomados como string. Ej.:
 Expresion general:
 - if () {} [else {}]
 
-If es un statement tambien, como var
+If es un statement tambien, como var.
 
-Si la expresion que va entre parentesis da true se ejecuta el bloque de codigo dentro del primer par de llaves, en caso contrario se ejecuta la condicion que esta entre el segundo par de llaves, si es qeu esta definida (lo que esta entre corchetes [] es opcional)
+Si la expresion que va entre parentesis da true se ejecuta el bloque de codigo dentro del primer par de llaves, en caso contrario se ejecuta la condicion que esta entre el segundo par de llaves, si es que esta definida (lo que esta entre corchetes [] es opcional)
 
-**Los bloques ({}) no van con ;** porque sino genera un statement vacio luego de la llave de cierre y antes del ;
+**Los bloques ({}) no van con ;** porque sino genera un statement vacio luego de la llave de cierre y antes del ;.
 
-Las llaves permiten poner mas de un statement y agrupan ese grupo de lineas. Donde haya un statement puedo reemplazarlo por una estructura entre llaves. Donde espero un statement puedo pasar una expresion, **pero no al reves** (porque statement es un tipo particular de expresion)
+Las llaves permiten poner mas de un statement y agrupan ese grupo de lineas. Donde haya un statement puedo reemplazarlo por una estructura entre llaves. Donde espero un statement puedo pasar una expresion, **pero no al reves** (porque statement es un tipo particular de expresion).
 
-Si en la condicion del if no uso typeof, cuando quiero analizar el boolean de una variable, me cubro de que la variable no este declarada. Si analizo una variable no declarada me va a dar un error, en cambio con el typeof adelante me la define como undefined y por ende false, y si esta decalrada pero no tiene valor pasa lo mismo. Entonces me cubro de las variables no decalaradas y de las no definidas con una misma solucion
+Si en la condicion del if no uso typeof, cuando quiero analizar el boolean de una variable, me cubro de que la variable no este declarada. Si analizo una variable no declarada me va a dar un error, en cambio con el typeof adelante me la define como undefined y por ende false, y si esta decalrada pero no tiene valor pasa lo mismo. Entonces me cubro de las variables no decalaradas y de las no definidas con una misma solucion.
 
-El if se puede llamar a un statement con un operador ternario.
+El if puede llamar a un statement con un operador ternario.
 
 Ejercicio en clase en consola Google Chrome:
 
@@ -196,12 +226,11 @@ else {
 ```
 
 
-2 En este caso use el operador ternario "?", en este caso acorde se cumpla o no la condicion parImparMensaje va a toamr uno u otro de los valores puestos luego de "?"
+2 En este caso use el operador ternario "?", en este caso acorde se cumpla o no la condicion parImparMensaje va a tomar uno u otro de los valores puestos luego de "?"
 ```
 var numero = Number(prompt("Ingrese un numero"));
 var parImparMensaje= numero % 2 === 0? "Par" : "Impar";
 ```
-
 
 3 Asi pudimos reducir la cantidad de lineas de codigo y automatizar mas el ejercicio
 ```
