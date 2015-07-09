@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML script Tag</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	//Hacer un programa que mediante un prompt obtenga una cadena de texto, y luego imprima por consola la posicion de la primera vocal.//
+ 	
+ 	var cadenaDeTexto = prompt("Ingresa la cadena de texto");
+ 	var letra;
+ 	var posLetra = 0;
+
+ 	while(posLetra < cadenaDeTexto.length){
+ 		letra = cadenaDeTexto[posLetra];
+
+ 		if(
+ 			letra === "a"
+ 			|| letra === "e"
+ 			|| letra === "i"
+ 			|| letra === "o"
+ 			|| letra === "u"
+ 		) { 
+ 			console.log("La cadena de texto "+cadenaDeTexto + " tiene una vocal en la posicion: "+ posLetra);
+ 			break;
+ 		}
+
+ 		posLetra++;
+ 	
+ 	}
+
+ 	
+
+
+
+	</script>
+
+	
+</body>
+
+
+</html>

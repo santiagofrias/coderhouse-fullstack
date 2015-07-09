@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML script Tag</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+
+	//Ej4. Mediante 2 prompts, recibir dos cadenas de texto e imprimir la posicion en la cual ocurre la 2 en la primera, o imprimir "no se encontro ocurrencia", en caso contrario. Se pide la resolucion mediante el uso de indexOf//
+
+var cadenaABuscar  = prompt("Ingrese la cadena en donde se va a buscar");
+var cadenaBuscada  = prompt("Ingrese la cadena a buscar");
+var tipoOcurrencia = prompt("Ingrese el tipo de ocurrencia");
+var ocurrenciaPos;
+
+if (
+  tipoOcurrencia !== "primera"
+  && tipoOcurrencia !== "ultima"
+) {
+  alert("Error: tipo de ocurrencia solo puede ser primera o ultima, usted ingreso: " + tipoOcurrencia);
+}
+else {
+  if (tipoOcurrencia === "primera") {
+    occurenciaPos = cadenaABuscar.indexOf(cadenaBuscada);
+  }
+  else {
+    occurenciaPos = cadenaABuscar.lastIndexOf(cadenaBuscada);
+  }
+  
+  if (ocurrenciaPos < 0) {
+    console.log("No se encontro ocurrencia");
+  }
+  else {
+    console.log("Se encontro ocurrencia de " + cadenaBuscada + " en " + cadenaABuscar + " en la posicion: " + ocurrenciaPos);
+  }
+}
+	</script>
+
+
+	</body>
+
+
+	</html>

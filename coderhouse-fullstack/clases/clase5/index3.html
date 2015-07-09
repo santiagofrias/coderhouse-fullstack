@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML script Tag</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	
+ 	
+ 	var cadenaDeTexto = prompt("Ingresa la cadena de texto");
+ 	var letra;
+ 	var posLetra = 0;
+ 	var cantVocales = 0; //Inicialmente vale 0 por ser un contador//
+
+ 	while(posLetra < cadenaDeTexto.length){
+ 		letra = cadenaDeTexto[posLetra];
+
+ 		if(
+ 			letra === "a"
+ 			|| letra === "e"
+ 			|| letra === "i"
+ 			|| letra === "o"
+ 			|| letra === "u"
+ 		) {
+ 			//letra es una vocal
+ 			cantVocales++;
+ 		}
+
+ 		posLetra++;
+ 	
+ 	}
+
+ 	console.log("La cadena de texto tiene : " +cantVocales +" vocales" );
+ 
+ 	
+ 	
+ 	
+
+	</script>
+
+	
+</bod
