@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+
+	function crearArrayDeDosNumeros(){
+		
+
+		return[1,2];
+	}
+
+
+	function agregarLength (arr){
+		if (! Array.isArray(arr)){
+			throw new Error(
+				"Expected arr to be  an array, " +
+				"but instead got: " + typeof arr
+				);
+		}
+		arr.push(arr.length);
+	}
+
+	function devolverUltimoValor(arr){
+
+		try{
+			agregarLength(arr);
+		}
+
+		catch(e){
+			arr = [];
+			agregarLength(arr);
+		}
+		//Devuelve el ultimo valor//
+		return arr[arr.length - 1];
+
+		
+	}
+
+	function main(){
+		console.log(devolverUltimoValor([1]));
+	}
+
+	main(); //Invoco funcion main//
+	//Main imprime por consola el retorno de dovolverUltimoValor
+
+	console.log("termine");
+
+	try{
+		agregarLength("dasdasas");
+		console.log("segui adelante");
+	}
+
+	try{
+		agregarLength("dasdasas");
+	}
+
+	catch (e){
+		console.log(e.message);
+	}
+
+	</script>
+
+</body>
+
+</html>

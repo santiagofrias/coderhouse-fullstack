@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+
+	function agregarLength (arr){
+		if (! Array.isArray(arr)){
+			throw new Error(
+				"Expected arr to be  an array, " +
+				"but instead got: " + typeof arr
+				);
+		}
+		arr.push(arr.length);
+	}
+
+	try{
+		agregarLength("dasdasas");
+		console.log("segui adelante");
+	}
+
+	try{
+		agregarLength("dasdasas");
+	}
+
+	catch (e){
+		console.log(e.message);
+	}
+
+	</script>
+
+</body>
+
+</html>

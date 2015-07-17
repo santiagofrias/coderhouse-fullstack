@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+
+
+	/**Devuelve true en caso feliz
+	*o undefined si me mandaste fruta (caso no feliz) 
+	*
+	@param (Array) arr el array que le voy a pushear un dato
+	*/
+		function earlyReturnExample(arr, nbr){
+			if(! Array.isArray(arr)){
+				return;
+				//return undefined;
+			}
+
+			if (typeof nbr !== "number"){
+				return;
+			}
+
+			arr.push("otro valor");
+		}
+
+		var res;
+
+		res = earlyReturnExample("lalala", true);
+	</script>
+
+</body>
+
+</html>
