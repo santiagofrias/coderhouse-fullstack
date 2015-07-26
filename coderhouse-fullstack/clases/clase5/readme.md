@@ -21,14 +21,14 @@ me fijo si strl empieza con "f" o "b"
 console.log(str1[0] === "f" || str1[0] === "b")
 
 
-CLASE 5
+#CLASE 5#
 
 Statements 
 -Conditionals
-    [x] if
+    if
     switch    
 -Looping
-    [x] while
+    while
     do while
     for
 -Declaration
@@ -41,7 +41,7 @@ Expression produce valores, mientras que Statement no produce valores.
 
 
 While (expr) stmt;
-Mientras esta expresion se evalua a true
+Mientras esta expresion se evalua a true, ejecuta el bloque de codigo entre {}
 
 Boolean(1)===true
 Boolean("")===true
